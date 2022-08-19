@@ -4,6 +4,7 @@ import random
 from snake import Snake
 from snakeTail import Tail
 from tetronimo import Tetronimo
+from direction import Move, Input
 
 delay = 0.1
 score = 0
@@ -14,9 +15,11 @@ screen.setup(width=600, height=600)
 
 head = Snake().snakehead()
 tail = Tail()
+directionMovement = Move()
+directionMovement.move(head)
 snaketail=[]
 snaketail = tail.AddingTail(snaketail)
-Tetronimo=Tetronimo()
+#Tetronimo=Tetronimo()
 
 
 
@@ -26,6 +29,7 @@ while True:
 
     #tail.startOfTail(snaketail)
     
-    Tetronimo = turtle.Turtle()
-    print("test2")
+    #Tetronimo = turtle.Turtle()
+
+    directionMovement.move(head)
     
