@@ -30,6 +30,8 @@ while True:
     #tail.startOfTail(snaketail)
     
     #Tetronimo = turtle.Turtle()
+    screen.update()
 
     directionMovement.move(head)
-    
+
+screen.mainloop()

@@ -27,8 +27,6 @@ class Input:
         self.screen.onkeypress(self.snakeLeft, "Left")
         self.screen.onkeypress(self.snakeUp, "Up")
         self.screen.onkeypress(self.snakeDown, "Down")
-        self.screen.onkeypress(self.palletUp, "z")
-        self.screen.onkeypress(self.palletDown, "s")
 
     def snakeUp(self):
         if self.head.direction != "down":
