@@ -6,6 +6,7 @@ from snakeTail import Tail
 from tetronimo import Tetronimo
 from direction import Move, Input
 from goal import Goal
+from defender import Defender
 
 delay = 0.1
 score = 0
@@ -23,6 +24,7 @@ snaketail = tail.AddingTail(snaketail)
 #Tetronimo=Tetronimo()
 
 goal=Goal().goalBoarder()
+defender= Defender().defender()
 
 keybinds = Input(screen, head)
 keybinds.keyboard_bindings()
