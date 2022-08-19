@@ -1,7 +1,5 @@
 import turtle
 
-from numpy import block
-
 class Tail:
     def __init__(self):
         self.startTail = 1

@@ -3,6 +3,7 @@ import time
 import random
 from snake import Snake
 from snakeTail import Tail
+from tetronimo import Tetronimo
 
 delay = 0.1
 score = 0
@@ -15,11 +16,16 @@ head = Snake().snakehead()
 tail = Tail()
 snaketail=[]
 snaketail = tail.AddingTail(snaketail)
+Tetronimo=Tetronimo()
+
 
 
 while True:
     #snaketail = turtle.Turtle()  test showing tail
-    #head = turtle.Turtle() test showing head
+    #head = turtle.Turtle() #test showing head
 
-    tail.startOfTail(snaketail)
+    #tail.startOfTail(snaketail)
+    
+    Tetronimo = turtle.Turtle()
+    print("test2")
     

@@ -8,5 +8,5 @@ class Snake:
         snakehead.speed(40)
         snakehead.penup()
         snakehead.goto(0,0)
-        snakehead.direction = "Stop"
+        snakehead.direction = "Right"
         return snakehead
