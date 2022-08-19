@@ -11,7 +11,7 @@ score = 0
 high_score = 0
 
 screen = turtle.Screen()
-screen.setup(width=600, height=600)
+screen.setup(width=1000, height=600)
 
 head = Snake().snakehead()
 tail = Tail()
