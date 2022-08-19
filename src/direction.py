@@ -31,15 +31,7 @@ class Input:
         self.screen.onkeypress(self.snakeUp, "Up")
         self.screen.onkeypress(self.snakeDown, "Down")
 
-    def defenderUp(self):
-        y = self.defender.ycor()
-        y += 10
-        self.defender.sety(y)
     
-    def defenderDown(self):
-        y = self.defender.ycor()
-        y-= 10
-        self.defender.sety(y)
 
     def snakeUp(self):
         if self.head.direction != "down":
@@ -57,7 +49,15 @@ class Input:
         if self.head.direction != "left":
             self.head.direction = "right"
     
-
+    def defenderUp(self):
+        y = self.defender.ycor()
+        y += 10
+        self.defender.sety(y)
+    
+    def defenderDown(self):
+        y = self.defender.ycor()
+        y-= 10
+        self.defender.sety(y)
     
     
     
