@@ -5,6 +5,7 @@ class Goal:
     def goalBoarder(self):
         goal=turtle.Turtle()
         goal.shape("square")
+        goal.penup()
         goal.goto(-500,0)
         goal.shapesize(stretch_wid = 50, stretch_len = 0.5)
         goal.speed(0)

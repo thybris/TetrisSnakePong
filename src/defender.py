@@ -5,4 +5,5 @@ class Defender:
         defender=turtle.Turtle()
         defender.shape("square")
         defender.shapesize(stretch_wid = 6, stretch_len = 1)
+        defender.penup()
         defender.goto(-450,0)
