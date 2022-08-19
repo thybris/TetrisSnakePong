@@ -16,10 +16,9 @@ class Move:
             snakehead.sety(y - 10)
         
 class Input:
-    def __init__(self, screen, head, pallet ):
+    def __init__(self, screen, head):
         self.screen = screen
         self.head = head
-        self.pallet = pallet
         
     def keyboard_bindings(self):
         self.screen.listen()

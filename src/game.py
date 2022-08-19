@@ -21,6 +21,8 @@ snaketail=[]
 snaketail = tail.AddingTail(snaketail)
 #Tetronimo=Tetronimo()
 
+keybinds = Input(screen, head)
+keybinds.keyboard_bindings()
 
 
 while True:
