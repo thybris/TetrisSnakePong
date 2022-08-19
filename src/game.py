@@ -18,5 +18,8 @@ snaketail = tail.AddingTail(snaketail)
 
 
 while True:
-    head = turtle.Turtle()
-    snaketail = turtle.Turtle()
+    #snaketail = turtle.Turtle()  test showing tail
+    #head = turtle.Turtle() test showing head
+
+    tail.startOfTail(snaketail)
+    
