@@ -16,16 +16,30 @@ class Move:
             snakehead.sety(y - 3)
         
 class Input:
-    def __init__(self, screen, head):
+    def __init__(self, screen, head, defender):
         self.screen = screen
         self.head = head
+        self.defender = defender
         
     def keyboard_bindings(self):
         self.screen.listen()
+        
+        self.screen.onkeypress(self.defenderUp, "z")
+        self.screen.onkeypress(self.defenderDown, "s")
         self.screen.onkeypress(self.snakeRight, "Right")
         self.screen.onkeypress(self.snakeLeft, "Left")
         self.screen.onkeypress(self.snakeUp, "Up")
         self.screen.onkeypress(self.snakeDown, "Down")
+
+    def defenderUp(self):
+        y = self.defender.ycor()
+        y += 10
+        self.defender.sety(y)
+    
+    def defenderDown(self):
+        y = self.defender.ycor()
+        y-= 10
+        self.defender.sety(y)
 
     def snakeUp(self):
         if self.head.direction != "down":

@@ -1,8 +1,7 @@
 import turtle
 import time
 import random
-from snake import Snake
-from snakeTail import Tail
+from snake import Snake, Tail
 from tetronimo import Tetronimo
 from direction import Move, Input
 from goal import Goal
@@ -26,7 +25,7 @@ snaketail = tail.AddingTail(snaketail)
 goal=Goal().goalBoarder()
 defender= Defender().defender()
 
-keybinds = Input(screen, head)
+keybinds = Input(screen, head, defender)
 keybinds.keyboard_bindings()
 
 
