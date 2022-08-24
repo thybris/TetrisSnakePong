@@ -5,7 +5,7 @@ class Tetronimo:
         self.tetronimo = turtle.Turtle()
         self.tetronimo.shape("square")
         self.tetronimo.color("red")
-        self.tetronimo.speed(80)
+        self.tetronimo.speed(40)
         self.tetronimo.penup()
         self.tetronimo.goto(-50,0)
         self.tetronimo.moveHorizontal = 5

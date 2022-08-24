@@ -61,12 +61,12 @@ while True:
         y = head.ycor()
         snaketail[0].goto(x, y)
 
-        if head.xcor() > 490 or head.xcor() < -350 or head.ycor() > 290 or head.ycor() < -290:
-            time.sleep(1)
-            head.goto(0, 0)
-            head.direction = "stop"
-            Tetronimo.restartGame()
-            snaketail.clear()
+    if head.xcor() > 590 or head.xcor() < -450 or head.ycor() > 390 or head.ycor() < -390:
+        time.sleep(1)
+        head.goto(0, 0)
+        head.direction = "stop"
+        Tetronimo.restartGame()
+        snaketail.clear()
 
 
 
