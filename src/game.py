@@ -10,13 +10,14 @@ from tetronimo import Tetronimo, Check
 delay = 0.1
 score = 0
 high_score = 0
+startTail=1
 
 screen = turtle.Screen()
 screen.setup(width=1200, height=800)
 
 head = Snake().snakehead()
-tail = Tail()
 
+tail = Tail()
 snaketail=[]
 snaketail = tail.AddingTail(snaketail)
 
@@ -48,7 +49,7 @@ while True:
     screen.update()
     Tetronimo.moveTetronimo()
 
-    tail.startTail(snaketail)
+    tail.startOfTail(snaketail)
 
     for i in range(len(snaketail)-1, 0, -1):
         x = snaketail[i-1].xcor()
