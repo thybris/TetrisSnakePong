@@ -2,10 +2,10 @@ import turtle
 import time
 import random
 from snake import Snake, Tail
-from tetronimo import Tetronimo
 from direction import Move, Input
 from goal import Goal
 from defender import Defender
+from tetronimo import Tetronimo
 
 delay = 0.1
 score = 0
@@ -16,10 +16,12 @@ screen.setup(width=1200, height=800)
 
 head = Snake().snakehead()
 tail = Tail()
+Tetronimo = Tetronimo()
 directionMovement = Move()
 directionMovement.move(head)
 snaketail=[]
 snaketail = tail.AddingTail(snaketail)
+shape = turtle.Turtle()
 #Tetronimo=Tetronimo()
 
 goal=Goal().goalBoarder()
@@ -37,6 +39,7 @@ while True:
     
     #Tetronimo = turtle.Turtle()
     screen.update()
+    Tetronimo.moveTetronimo()
 
     directionMovement.move(head)
 
