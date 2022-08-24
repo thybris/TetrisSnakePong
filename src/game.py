@@ -16,12 +16,16 @@ screen.setup(width=1200, height=800)
 
 head = Snake().snakehead()
 tail = Tail()
-Tetronimo = Tetronimo()
-Check=Check()
-directionMovement = Move()
-directionMovement.move(head)
+
 snaketail=[]
 snaketail = tail.AddingTail(snaketail)
+
+Tetronimo = Tetronimo()
+Check=Check()
+
+directionMovement = Move()
+directionMovement.move(head)
+
 shape = turtle.Turtle()
 #Tetronimo=Tetronimo()
 

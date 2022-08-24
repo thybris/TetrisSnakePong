@@ -1,3 +1,4 @@
+from tabnanny import check
 import turtle
 
 class Tetronimo:
@@ -49,6 +50,13 @@ class Check (Tetronimo):
             self.tetronimo.setx(600)
             self.tetronimo.moveVertical *= -1
             self.tetronimo.moveHorizontal *= -1
+
+    def checkWin(self):
+        if self.tetronimo.xcor() < -500:
+            self.tetronimo.setx(-500)
+            #test bounce --> self.tetronimo.moveHorizontal *= -1
+
+
 
 
     
