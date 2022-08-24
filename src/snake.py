@@ -28,10 +28,10 @@ class Tail:
         return blocks
 
     def startOfTail(self, blocks):
-        if self.tailLength == 1:
+        if self.startTail == 1:
             for i in range (0,3):
                 blocks = self.AddingTail(blocks)
-            self.tailLength = 2
+            self.startTail = 2
         return blocks
 
 
