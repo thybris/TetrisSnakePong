@@ -55,9 +55,12 @@ class Check (Tetronimo):
             self.tetronimo.moveHorizontal *= -1
 
     def checkWin(self):
-        if self.tetronimo.xcor() < -500:
-            self.tetronimo.setx(-500)
+        if self.tetronimo.ycor() < -500:
+            self.tetronimo.sety(-500)
+            self.tetronimo.moveVertical *= -1
+            self.tetronimo.moveHorizontal *= -1
             #test bounce --> self.tetronimo.moveHorizontal *= -1
+            return True
 
     def checkDefender(self,defender):
         if(self.tetronimo.xcor() < - 450 and self.tetronimo.xcor() > -460 and ((self.tetronimo.ycor() < defender.ycor() + 50)and(self.tetronimo.ycor() < defender.ycor() - 50))):

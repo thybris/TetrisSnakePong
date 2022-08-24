@@ -4,10 +4,10 @@ import turtle
 class Snake:
     def snakehead(self):
         snakehead = turtle.Turtle()
+        snakehead.penup()
         snakehead.shape("square")
         snakehead.color("green")
         snakehead.speed(40)
-        snakehead.penup()
         snakehead.goto(0,0)
         snakehead.direction = "Right"
         return snakehead

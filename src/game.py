@@ -68,10 +68,11 @@ while True:
         Tetronimo.restartGame()
         snaketail.clear()
 
-
-
-    
-    
+    if Check.checkWin():
+        tail.addingTail(snaketail)
+        Tetronimo.restartGame()
+        head.goto(0, 0)
+        snaketail.clear()
 
     directionMovement.move(head)
     Check.checkDefender(defender)
