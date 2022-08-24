@@ -10,9 +10,9 @@ snakepong spelen met tetris blokken
 - Crash detectie ball en snake waarbij reset game
 
 # Wat is er niet gelukt
-- het verkrijgen van een trenomino ipv een simpele bal
-- score bijhouden
+- Het verkrijgen van een trenomino ipv een simpele bal
+- Score bijhouden
 
 # Extra info
-- Voor dit project heb ik mij soms gebasseerd op het vorige project
+- Voor dit project heb ik mij soms gebasseerd op het vorige project (gebruik turtle)
 - Dit maal heb ik een volledige andere aanpak genomen in het gebruik van klasses waardoor de code ook stevig veranderde
