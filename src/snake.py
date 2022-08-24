@@ -1,3 +1,4 @@
+import time
 import turtle
 
 class Snake:
@@ -17,6 +18,7 @@ class Tail:
 
     def AddingTail(self, blocks):
         tailBlock = turtle.Turtle()
+        tailBlock.speed(0)
         tailBlock.shape("square")
         tailBlock.color("green")
         blocks.append(tailBlock)
@@ -31,3 +33,5 @@ class Tail:
                 blocks = self.AddingTail(blocks)
             self.tailLength = 2
         return blocks
+
+

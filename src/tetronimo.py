@@ -1,4 +1,3 @@
-from tabnanny import check
 import turtle
 
 class Tetronimo:
@@ -18,6 +17,10 @@ class Tetronimo:
         self.tetronimo.setx(self.tetronimo.xcor() + self.tetronimo.moveHorizontal)
         self.tetronimo.sety(self.tetronimo.ycor() + self.tetronimo.moveVertical)
         Check.checkWall(self)
+
+    def restartGame(self):
+        self.tetronimo.goto(0,0)
+        
 
 class Check (Tetronimo):
     def checkWall(self):
@@ -56,7 +59,10 @@ class Check (Tetronimo):
             self.tetronimo.setx(-500)
             #test bounce --> self.tetronimo.moveHorizontal *= -1
 
-
+    def checkDefender(self,defender):
+        if(self.tetronimo.xcor() < - 450 and self.tetronimo.xcor() > -460 and ((self.tetronimo.ycor() < defender.ycor() + 50)and(self.tetronimo.ycor() < defender.ycor() - 50))):
+            self.tetronimo.setx(-450)
+            self.tetronimo.moveHorizontal *= -1
 
 
     
