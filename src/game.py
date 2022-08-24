@@ -5,7 +5,7 @@ from snake import Snake, Tail
 from direction import Move, Input
 from goal import Goal
 from defender import Defender
-from tetronimo import Tetronimo
+from tetronimo import Tetronimo, Check
 
 delay = 0.1
 score = 0
@@ -17,6 +17,7 @@ screen.setup(width=1200, height=800)
 head = Snake().snakehead()
 tail = Tail()
 Tetronimo = Tetronimo()
+Check=Check()
 directionMovement = Move()
 directionMovement.move(head)
 snaketail=[]
